@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <h1> Calculator </h1>
+        <lightning-input type="number" variant="standard" name="name" label="Enter First number" placeholder="enter number..." onchange={changeFirstNumber}></lightning-input>
+        <lightning-input type="number" variant="standard" name="name" label="Enter Second number" placeholder="enter number..." onchange={changeSecondNumber}></lightning-input>
+        <p slot="footer"><lightning-button variant="brand" label="Add Numbers" title="Add Numbers" onclick={addNumbers}></lightning-button>
+                         <lightning-button variant="brand" label="sub Numbers" title="subNumbers" onclick={subNumbers}></lightning-button>
+                         <lightning-button variant="brand" label="mul Numbers" title="mulNumbers" onclick={mulNumbers}></lightning-button>
+                         <lightning-button variant="brand" label="div Numbers" title="divNumbers" onclick={divNumbers}></lightning-button>     
+        </p>
+    </lightning-card>
+</template>
